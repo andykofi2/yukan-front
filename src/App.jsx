@@ -1,0 +1,28 @@
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import SiteLayout from "./components/SiteLayout";
+import HomePage from "./pages/HomePage";
+import JoinPage from "./pages/JoinPage";
+import MusicPage from "./pages/MusicPage";
+import OverviewPage from "./pages/OverviewPage";
+import ShowsPage from "./pages/ShowsPage";
+import TravelPage from "./pages/TravelPage";
+import UpdatesPage from "./pages/UpdatesPage";
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<SiteLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/overview" element={<OverviewPage />} />
+          <Route path="/music" element={<MusicPage />} />
+          <Route path="/travel" element={<TravelPage />} />
+          <Route path="/shows" element={<ShowsPage />} />
+          <Route path="/updates" element={<UpdatesPage />} />
+          <Route path="/join" element={<JoinPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
