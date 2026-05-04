@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "http://yukanmusic.co.uk/*"
+  to = "https://yukanmusic.co.uk/:splat"
+  status = 301
+  force = true
