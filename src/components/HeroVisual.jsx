@@ -17,13 +17,13 @@ export default function HeroVisual() {
           <div className="artist-photo-shell">
             <img
               className="artist-photo"
-              src="/assets/pic1.png"
+              src="/assets/yukan1.png"
               alt="Yukan promo visual"
               onLoad={() => setPhotoLoaded(true)}
               onError={() => setPhotoLoaded(false)}
             />
             <div className={`artist-photo-fallback${photoLoaded ? " is-hidden" : ""}`}>
-              <span>Drop `pic1.png` into `public/assets`</span>
+              <span>Drop `yukan1.png` into `public/assets`</span>
             </div>
           </div>
 

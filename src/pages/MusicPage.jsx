@@ -12,18 +12,23 @@ export default function MusicPage() {
       <section className="page-grid page-grid-wide">
         <article className="info-card info-card-large">
           <div className="player-shell">
-            <iframe
-              title="Yukan Music Player"
-              className="player-frame"
-              src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT?utm_source=generator"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
+            <img
+              title="Yukan latest artwork"
+              className="player-image"
+              src="/assets/yukan2.png"
+              alt="Yukan latest release artwork"
             />
           </div>
         </article>
         <article className="info-card">
-          <h3>What fans get here</h3>
-          <p>Current release links, rollout updates, and a clean path into the private list.</p>
+          <div className="player-shell">
+            <img
+              title="Yukan latest artwork detail"
+              className="player-image player-image-small"
+              src="/assets/yukan2.png"
+              alt="Yukan latest release artwork detail"
+            />
+          </div>
         </article>
       </section>
     </>

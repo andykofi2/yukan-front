@@ -504,6 +504,20 @@ select {
   color: rgba(255, 255, 255, 0.42);
 }
 
+.form-status {
+  margin: 8px 0 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.form-status.is-success {
+  color: #86efac;
+}
+
+.form-status.is-error {
+  color: #fca5a5;
+}
+
 .inline-fields {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -546,11 +560,12 @@ select {
 }
 
 .player-shell {
-  margin-top: 22px;
-  border-radius: 24px;
+  margin-top: 18px;
+  border-radius: 20px;
   overflow: hidden;
   border: 1px solid rgba(239, 68, 68, 0.18);
   background: rgba(0, 0, 0, 0.2);
+  max-width: 420px;
 }
 
 .player-frame {
@@ -560,8 +575,19 @@ select {
   border: 0;
 }
 
+.player-image {
+  display: block;
+  width: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+
+.player-image-small {
+  min-height: 220px;
+}
+
 .player-note {
-  margin: 16px 0 0;
+  margin: 12px 0 0;
 }
 
 .social-stack,
@@ -571,19 +597,21 @@ select {
 }
 
 .social-stack {
-  margin-top: 22px;
+  margin-top: 16px;
+  gap: 10px;
 }
 
 .social-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 18px;
-  border-radius: 18px;
+  padding: 12px 14px;
+  border-radius: 14px;
   border: 1px solid rgba(239, 68, 68, 0.12);
   background: rgba(255, 255, 255, 0.04);
   color: #ffffff;
   font-weight: 700;
+  font-size: 0.95rem;
 }
 
 .arrow {

@@ -76,12 +76,10 @@ export default function HomePage() {
           </div>
 
           <div className="player-shell">
-            <iframe
-              title="Yukan Music Player"
-              className="player-frame"
-              src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT?utm_source=generator"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
+            <img
+              src="/assets/yukan1.png"
+              alt="Yukan cover art"
+              className="player-image"
             />
           </div>
 
