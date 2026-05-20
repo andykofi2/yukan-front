@@ -1,5 +1,4 @@
 [[redirects]]
-  from = "http://yukanmusic.co.uk/*"
-  to = "https://yukanmusic.co.uk/:splat"
+  from = "http://*"
+  to = "https://:splat"
   status = 301
-  force = true
